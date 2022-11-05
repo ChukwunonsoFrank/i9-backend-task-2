@@ -5,26 +5,19 @@
 ## Usage
 
 #### Making a generic request:
+In this example, we are using the `curl` command line tool to make a request with the `operation_type` Enum and the two integers the operation will be performed on, `x` and `y`.
 
 ```bash
-# curl -d '{"operation_type: {}"}' -H 'Content-Type: application/json' https://example.com/login
-
+curl -d '{"operation_type": {"value": "addition"}, "x": 10, "y": 10}' -H 'Content-Type: application/json' https://hng9-backend-task-2.onrender.com/v1/operation/compute
 ```
 
-#### Set environment variables:
+<!-- img for generic request goes here -->
+
+#### Bonus(Describing the operation in words):
+Here, we describe the operation we want to execute in a sentence and pass it as a string in the `operation_type` parameter of the request body. This feature is powered by the OpenAI GPT-3 API via the `text-davinci-002` model.
 
 ```bash
-cp .env.example .env
+curl -d '{"operation_type": "Can you please add 4 and 5 for me?"}' -H 'Content-Type: application/json' https://hng9-backend-task-2.onrender.com/v1/operation/compute
 ```
 
-#### Install dependencies:
-
-```bash
-npm install
-```
-
-## Running Locally
-
-```bash
-npm run dev
-```
+<!-- img for gpt-3 request goes here -->
