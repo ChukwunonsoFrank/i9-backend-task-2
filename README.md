@@ -11,7 +11,7 @@ In this example, we are using the `curl` command line tool to make a request wit
 curl -d '{"operation_type": {"value": "addition"}, "x": 10, "y": 10}' -H 'Content-Type: application/json' https://hng9-backend-task-2.onrender.com/v1/operation/compute
 ```
 
-<!-- img for generic request goes here -->
+![Generic response in the terminal](https://github.com/ChukwunonsoFrank/i9-backend-task-2/blob/main/generic-response.png "Generic response in the terminal")
 
 #### Bonus(Describing the operation in words):
 Here, we describe the operation we want to execute in a sentence and pass it as a string in the `operation_type` parameter of the request body. This feature is powered by the OpenAI GPT-3 API via the `text-davinci-002` model.
@@ -20,4 +20,4 @@ Here, we describe the operation we want to execute in a sentence and pass it as 
 curl -d '{"operation_type": "Can you please add 4 and 5 for me?"}' -H 'Content-Type: application/json' https://hng9-backend-task-2.onrender.com/v1/operation/compute
 ```
 
-<!-- img for gpt-3 request goes here -->
+![GPT-3 response in the terminal](https://github.com/ChukwunonsoFrank/i9-backend-task-2/blob/main/gpt-3-response.png "GPT-3 response in the terminal")
