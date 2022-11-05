@@ -21,3 +21,8 @@ curl -d '{"operation_type": "Can you please add 4 and 5 for me?"}' -H 'Content-T
 ```
 
 ![GPT-3 response in the terminal](https://github.com/ChukwunonsoFrank/i9-backend-task-2/blob/main/gpt-3-response.png "GPT-3 response in the terminal")
+
+
+## License
+
+Licensed under [MIT License](LICENSE). © Kanu Frank Chukwunonso.
